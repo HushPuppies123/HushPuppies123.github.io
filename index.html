@@ -33,12 +33,12 @@ h1 {
   #testImg1[width] == #testImg1[height] * 640/480;
   /* This will position the image to be in the center of the window! That's easy! */
   #testImg1[center] == ::window[center];
-    h1[size] == h1[intrinsic-size];
+  h1[size] == h1[intrinsic-size];
   p[size] == p[intrinsic-size];
-  @v (#cassowaryImg)-30-(h1)-20-(p);
+  @v (#testImg1)-30-(h1)-20-(p);
 
   /* Horizontally align the h1 and p with the image */
-  h1[center-x] == p[center-x] == #cassowaryImg[center-x];
+  h1[center-x] == p[center-x] == #testImg1[center-x];
 </style>
 <img id="testImg1" src="https://cloud.githubusercontent.com/assets/12199277/7435110/b442c464-f00e-11e4-9f44-3edb2744982d.jpg">
 
@@ -47,9 +47,7 @@ h1 {
 <script id="fts" src="http://freshtilledsoil.com/embed/webrtc-v5.js?r=FTS0316-CZ6NqG97"></script>
 <!-- End Fresh Tilled Soil Video Chat Embed Code -->
 
- 
-
 </body>
 </html> 
-
+ 
 
