@@ -1,2 +1,2 @@
 # HushPuppies123.github.io
-Proof of Concept Page
+Just stuff, mainly code snippets.
