@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandbox | GSS</title>
+   </head>
+  <script src="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/v2.0.0/v2.0.0/gss.js"></script>
+  <script type="text/javascript">
+  window.engine = new GSS(document);
+</script>
+<body>
+  <style>
+body {
+  background-color: #231028;
+  color: #fdf9ad;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+h1 {
+  font-family: "adelle", georgia,serif;
+  font-style: normal;
+  font-weight: 400;
+}
+</style>
+
+<style type="text/gss">
+  /* GSS needs the dimension of the image to calculate its position. */
+  #testImg1[height] == 480;
+  /* The width == the height multiply by the width/height ratio */
+  #testImg1[width] == #testImg1[height] * 640/480;
+  /* This will position the image to be in the center of the window! That's easy! */
+  #testImg1[center] == ::window[center];
+  h1[size] == h1[intrinsic-size];
+  p[size] == p[intrinsic-size];
+  @v (#testImg1)-30-(h1)-20-(p);
+  /* Horizontally align the h1 and p with the image */
+  h1[center-x] == p[center-x] == #testImg1[center-x];
+</style>
+<img id="testImg1" src="https://cloud.githubusercontent.com/assets/12199277/7435110/b442c464-f00e-11e4-9f44-3edb2744982d.jpg">
+<h1>Talk to Me!</h1>
+<p>Proof of Concept Site</p>
+<p>WebRTC</p>
+<p>GSS Layout</p>
+<!-- Begin Fresh Tilled Soil Video Chat Embed Code -->
+<div id="freshtilledsoil_embed_widget" class="video-chat-widget"></div>
+<script id="fts" src="http://freshtilledsoil.com/embed/webrtc-v5.js?r=FTS0316-CZ6NqG97"></script>
+<!-- End Fresh Tilled Soil Video Chat Embed Code -->
+</body>
+</html> 
