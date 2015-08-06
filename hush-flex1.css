@@ -1,0 +1,77 @@
+
+/* Source http://www.flexboxin5.com/ */
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+}
+		
+
+
+.flex-items-default {
+    width: 300px;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+		
+
+.flex-item-1 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
+.flex-item-2 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
+.flex-item-3 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
+.flex-item-4 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
+.flex-item-5 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
+.flex-item-6 {
+    width: <property unused>
+    height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+	
+
