@@ -8,16 +8,23 @@
    </head>
       <body>
         <h1>PlayBox</h1>
+                <div  class="flex-container">
+              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/">Home</a></h4>
+              </div>
           <aside>
               <h2>This Page Is Under Construction</h2>
-              <h3>This section needs to be checked with a screen reader to find out what happened to the content.  Original text was "Home". I'll assume the changed content is available to the screen reader, but needs checking.</h3>
+              <h3>Screen Reader Check Required</h3>
+              <ul>
+                  <li>First Item: Change of text from "Any Changes?" to "This Has Been Changed"</li>
+                  <li>Second Item: Output for date "You loaded this page on:"</li>
+              </ul>
               <div  class="flex-container">
-              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/"><span>Home</span></a></h4>
+              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/"><span>Any Changes?</span></a></h4>
               </div>
           </aside>
         <script>
           var span = document.getElementsByTagName('span')[0];
-          span.textContent = 'Changed DOM text Content For Home Link Here'; // change DOM text content
+          span.textContent = 'This Has Been Changed'; // change DOM text content
           span.style.display = 'inline';  // change CSSOM property
           // create a new element, style it, and append it to the DOM
           var loadTime = document.createElement('div');
@@ -45,10 +52,8 @@
           <aside>
               <h4>Articles: Displayed Using Aside With Class flex-item-nav and Span</h4>
                <div  class="flex-container">
-                    <h4 class="flex-item-nav"><span class="flex-item-links">A Span is Here</span></h4>
                     <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/v2/reference/">Google Page Speed API</a></h4>
                     <h4 class="flex-item-nav"><a href="http://www.html5rocks.com/en/features/file_access">HTML5 File Access</a></span></h4>
-                    <h4 class="flex-item-nav">No Span</h4>
                     <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/BlockingJS">Article: Remove Blocking JS</a></h4>
                 </div>
             </aside>
