@@ -53,6 +53,7 @@ a {
     border: solid #cccccc 3px;
     border-radius:5px;
     align-content:center;
+    background-color:#000000;
 }		
 
 .flex-item-1 {
