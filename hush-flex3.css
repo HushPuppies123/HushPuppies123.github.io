@@ -3,12 +3,13 @@ background: #843708;
     color: #D5D4D2;
     font-family:Arial;
 }
+
 h1, h2, h3, h4, h5, h6 a:active, a:visited {
     color: #c1b073;
 }
 h1, h2, h3, h4, h5, h6 a:hover, a:focus {
     color: #c1b073;
-    background:#000000;
+    text-decoration: outline;
 }
 
 
