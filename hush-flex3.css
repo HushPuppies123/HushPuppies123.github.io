@@ -12,6 +12,16 @@ h1, h2, h3, h4, h5, h6 a:hover, a:focus {
     text-decoration: outline;
 }
 
+::selection {
+    background: #428399;
+    color: #fff;
+    }
+
+::-moz-selection {
+    background: #428399;
+    color: #fff;
+    }
+
 
 /* Source http://www.flexboxin5.com/ */
 /* first flex-container renamed due to addition from http://the-echoplex.net/flexyboxes/ */
