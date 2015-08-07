@@ -70,11 +70,13 @@ footer {
     height: 50px;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 300px;
+    flex-basis: auto;
     border: solid #cccccc 3px;
     border-radius:5px;
-    align-content:center;
     background-color:#000000;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
 }		
 
 .flex-item-1 {
