@@ -68,7 +68,6 @@ footer {
 /* add flex-item-nav to original code from http://www.flexboxin5.com/ */
 .flex-item-nav {
     height: 50px;
-    min-width:50px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 300px;
