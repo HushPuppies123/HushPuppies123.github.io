@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 a:hover, a:focus {
 /* add flex-item-nav to original code from http://www.flexboxin5.com/ */
 .flex-item-nav {
     height: 50px;
+    min-width:50px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 300px;
