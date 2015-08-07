@@ -1,4 +1,7 @@
-
+body {
+background: #261F26;
+    color: #D5D4D2;
+}
 /* Source http://www.flexboxin5.com/ */
 /* first flex-container renamed due to addition from http://the-echoplex.net/flexyboxes/ */
 .flex-container-from-flexboxin5 {
