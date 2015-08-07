@@ -91,58 +91,6 @@ header {
 }
 
 
-.flex-item-1 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
-	
-
-.flex-item-2 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
-	
-
-.flex-item-3 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
-	
-
-.flex-item-4 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
-	
-
-.flex-item-5 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
-	
-
-.flex-item-6 {
-    width: <property unused>
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-}
 /* end Source http://www.flexboxin5.com/ */
 /* beginning addition from http://the-echoplex.net/flexyboxes/ */	
 .flex-container {
