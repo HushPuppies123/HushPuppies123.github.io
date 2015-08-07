@@ -9,22 +9,22 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 h1 {
-	font-size:1.2em;
+	font-size:1.5em;
 }
 h2 {
-	font-size:1.0em;
+	font-size:1.2em;
 }
 h3 {
-	font-size:0.9em;
+	font-size:1.0em;
 }
 h4 {
-	font-size:0.8em;
+	font-size:0.9em;
 }
 h5 {
-	font-size:0.7em;
+	font-size:0.8em;
 }
 h6 {
-	font-size:0.6em;
+	font-size:0.7em;
 }
 
 
@@ -42,8 +42,9 @@ a {
     background: #428399;
     color: #fff;
     }
-
-
+footer {
+	background-color:#00000;
+}
 /* Source http://www.flexboxin5.com/ */
 /* first flex-container renamed due to addition from http://the-echoplex.net/flexyboxes/ */
 .flex-container-from-flexboxin5 {
