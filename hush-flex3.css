@@ -4,13 +4,13 @@ background: #843708;
     font-family:Arial;
 }
 
-h1, h2, h3, h4, h5, h6 a:active, a:visited {
+h1, h2, h3, h4, h5, h6  {
     color: #c1b073;
 }
-h1, h2, h3, h4, h5, h6 a:hover, a:focus {
-    color: #c1b073;
-    text-decoration: outline;
-}
+a {
+    color: #938F67;
+    }
+
 
 ::selection {
     background: #428399;
