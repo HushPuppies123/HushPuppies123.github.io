@@ -23,7 +23,7 @@
 .flex-item-nav {
     width: 300px;
     height: 50px;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0;
     border: solid #cccccc 3px;
