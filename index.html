@@ -11,21 +11,29 @@
           <aside>
               <h2>This Page Is Under Construction</h2>
               <div  class="flex-container">
-              <h4 class="flex-item-links"><a href="http://hushpuppies123.github.io/">Home</a></h4>
+              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/"><span>Home</span></a></h4>
               </div>
           </aside>
+        <script>
+          var span = document.getElementsByTagName('span')[0];
+          span.textContent = 'Changed DOM text Content For Home Link Here'; // change DOM text content
+          span.style.display = 'inline';  // change CSSOM property
+          // create a new element, style it, and append it to the DOM
+          var loadTime = document.createElement('div');
+          loadTime.textContent = 'You loaded this page on: ' + new Date();
+          loadTime.style.color = '#cccccc';
+          document.body.appendChild(loadTime);
+        </script>
           <nav>
-              <h4>Validators and Checkers</h4>
-              <h5>Nav With Class flex-item-links</h5>
+              <h4>Validators and Checkers: Displayed Using Nav With Class "flex-item-links"</h4>
               <div  class="flex-container">
-              <h4 class="flex-item-links"><a href="http://hushpuppies123.github.io/">Home</a></h4>
               <h4 class="flex-item-links"><a href="https://validator.w3.org/nu/">Nu Validator</a></h4>
               <h4 class="flex-item-links"><a href="http://validator.w3.org/mobile/">Mobile Validator</a></h4>
               <h4 class="flex-item-links"><a href="https://developers.google.com/speed/pagespeed/insights/">Google Page Speed Insights</a></h4>
               </div>
           </nav>
           <aside>
-              <h4>Aside With Class flex-item-nav and Span</h4>
+              <h4>Articles: Displayed Using Aside With Class flex-item-nav and Span</h4>
                <div  class="flex-container">
                     <h4 class="flex-item-nav"><span class="flex-item-links">A Span is Here</span></h4>
                     <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/v2/reference/">Google Page Speed API</a></h4>
@@ -46,19 +54,11 @@
               <h3>Mobile Validator Warning: The CSS style sheet contains rules referencing the position, display or float properties</h3>
           </section>
           <section>
-        <h2>Google Speed</h2>
-        <p>About <span> Speed!</span>in pages</p>
-        <div><img src="https://cloud.githubusercontent.com/assets/12199277/9096677/9f86def6-3b8c-11e5-80bc-627511506f3f.jpg" alt="Thumbnail image of Dr. Martin Luther King Jr."></div>
-        <script>
-          var span = document.getElementsByTagName('span')[0];
-          span.textContent = 'Important Span Item'; // change DOM text content
-          span.style.display = 'inline';  // change CSSOM property
-          // create a new element, style it, and append it to the DOM
-          var loadTime = document.createElement('div');
-          loadTime.textContent = 'You loaded this page on: ' + new Date();
-          loadTime.style.color = '#cccccc';
-          document.body.appendChild(loadTime);
-        </script>
+              <h2>Image Generation:</h2>
+              <h3>Work to be done: Obtain EXIF information from source, incorporate using Schema.org</h3>
+                <div><img src="https://cloud.githubusercontent.com/assets/12199277/9096677/9f86def6-3b8c-11e5-80bc-627511506f3f.jpg" alt="Thumbnail image of Dr. Martin Luther King Jr."></div>
+        <h5><a href="https://www.flickr.com/photos/floridamemory/12001376733/in/pool-flickrcommons/">Image Source</a></h5>
+
         <h3>Important Lesson: Executing our inline script blocks DOM construction</h3>
         <p>In other words, our script block can’t find any elements later in the page because they haven’t been processed yet! Or, put slightly differently: executing our inline script blocks DOM construction, which will also delay the initial render.</p>
         <h5><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript">Link to Source of above code</a></h5>
