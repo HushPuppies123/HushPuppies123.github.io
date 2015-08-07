@@ -74,6 +74,7 @@ footer {
     border: solid #cccccc 3px;
     border-radius:5px;
     background-color:#000000;
+    text-align:center;
 }		
 .flex-item-links {
     height: 50px;
@@ -83,6 +84,7 @@ footer {
     border: solid #cccccc 3px;
     border-radius:5px;
     background-color:#642d0c;
+    text-align:center;
 }
 
 
