@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="hush-flex3.css" rel="stylesheet">
+    <title>Sandbox | Testing</title>
+   </head>
+      <body>
+        <h1>PlayBox</h1>
+                <div  class="flex-container">
+              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/">Home</a></h4>
+              </div>
+          <aside>
+              <h2>This Page Is Under Construction</h2>
+              <h3>Screen Reader Check Required</h3>
+              <ul>
+                  <li>First Item: Change of text from "Any Changes?" to "This Has Been Changed"</li>
+                  <li>Second Item: Output for date "You loaded this page on:"</li>
+              </ul>
+              <div  class="flex-container">
+              <h4 class="flex-item-nav"><a href="http://hushpuppies123.github.io/"><span>Any Changes?</span></a></h4>
+              </div>
+          </aside>
+        <script>
+          var span = document.getElementsByTagName('span')[0];
+          span.textContent = 'This Has Been Changed'; // change DOM text content
+          span.style.display = 'inline';  // change CSSOM property
+          // create a new element, style it, and append it to the DOM
+          var loadTime = document.createElement('div');
+          loadTime.textContent = 'You loaded this page on: ' + new Date();
+          loadTime.style.color = '#cccccc';
+          document.body.appendChild(loadTime);
+        </script>
+          <nav>
+              <h4>Validators and Checkers: Displayed Using Nav With Class "flex-item-links"</h4>
+              <div  class="flex-container">
+              <h4 class="flex-item-links"><a href="https://validator.w3.org/nu/">Nu Validator</a></h4>
+              <h4 class="flex-item-links"><a href="http://validator.w3.org/mobile/">Mobile Validator</a></h4>
+              <h4 class="flex-item-links"><a href="https://developers.google.com/speed/pagespeed/insights/">Google Page Speed Insights</a></h4>
+              </div>
+          </nav>
+            <nav>
+              <h4>W3 References: Displayed Using Nav With Class flex-item-nav and Span</h4>
+               <div  class="flex-container">
+                    <h4 class="flex-item-nav"><a href="http://www.w3.org/standards/webdesign/mobilweb">W3C Mobile Web</a></h4>
+                    <h4 class="flex-item-nav"><a href="http://www.w3.org/TR/mobile-bp/">W3C Mobile Web Best Practices</a></h4>
+                    <h4 class="flex-item-nav"><a href="https://w3c.github.io/manifest/">Manifest for a Web Application</a></h4>
+                </div>
+            </nav>
+          
+          <aside>
+              <h4>Articles: Displayed Using Aside With Class flex-item-nav and Span</h4>
+               <div  class="flex-container">
+                    <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/v2/reference/">Google Page Speed API</a></h4>
+                    <h4 class="flex-item-nav"><a href="http://www.html5rocks.com/en/features/file_access">HTML5 File Access</a></span></h4>
+                    <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/BlockingJS">Article: Remove Blocking JS</a></h4>
+                    <h4 class="flex-item-nav"><a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">Optimize CSS delivery</a></h4>
+                    <h4 class="flex-item-nav"><a href="http://www.w3schools.com/cssref/css_animatable.asp">Animatable CSS</a></h4>
+                </div>
+            </aside>
+          <article>
+
+
+          <section>
+            <header><h2>CSS Concerns</h2></header>
+            <h3>Mobile Validator Warning: The CSS style sheet contains rules referencing the position, display or float properties</h3>
+            <h4><a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">Article on Optimizing CSS delivery</a></h4>
+          </section>
+            <section class="flex-container">
+            <header><h2>CSS Concerns: HTML5 and flexbox</h2></header>
+            <h3>With a section class = "flex-container" the CSS for the HTML5 header element was over-ridden.</h3>
+          </section>
+            <section class="flex-container">
+          <header><h2>W3C Mobile References</h2></header>
+          <h3>Displayed Using Section class="flex-container"</h3>
+          <h3><a href="http://www.w3.org/standards/webdesign/mobilweb">MOBILE WEB</a></h3>
+          <blockquote>A number of the barriers that mobile users face are similar to those experienced by people with disabilities. These similarities make it natural to aim at developing Web sites that are accessible both for people with disabilities and for mobile devices. The two reference documents in this space, the Web Content Accessibility Guidelines (WCAG) and the Mobile Web Best Practices have thus a number of links and similarities.</blockquote>
+          </section>
+          <section class="flex-container">
+              <header><h2>Image Generation:</h2></header>
+              <h3>Displayed Using Section class="flex-container"</h3>
+              <h3>Work to be done: Obtain EXIF information from source, incorporate using Schema.org</h3>
+                <div><img src="https://cloud.githubusercontent.com/assets/12199277/9096677/9f86def6-3b8c-11e5-80bc-627511506f3f.jpg" alt="Thumbnail image of Dr. Martin Luther King Jr."></div>
+                <h5><a href="https://www.flickr.com/photos/floridamemory/12001376733/in/pool-flickrcommons/">Image Source</a></h5>
+          </section>
+           <section class="flex-container">
+               <header><h2>Flexbox Accessibility: Visibility None</h2></header>
+               <h3>Displayed Using Section class="flex-container"</h3>
+               <p>Currently, due to a known issue, specifying visibility: collapse on a flex item causes it to be treated as if it were display: none instead of the intended behavior, treating it as if it were visibility: hidden. The suggested workaround until this issue is resolved is to use visibility:hidden for flex items that should behave as if they were designated visibility:collapse. For more information, see bug 783470.</p>
+               <h5>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">MDN Guide to FlexBoxes</a></h5>
+           </section>
+          <section class="flex-container">
+              <header><h2>JavaScript</h2></header>
+              <h3>Displayed Using Section class="flex-container"</h3>
+            <h3>Important Lesson: Executing our inline script blocks DOM construction</h3>
+            <p>In other words, our script block can’t find any elements later in the page because they haven’t been processed yet! Or, put slightly differently: executing our inline script blocks DOM construction, which will also delay the initial render.</p>
+            <h5 class="flex-item-links"><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript">Link to Source of above code</a></h5>
+            <h3>What About Google Advice: Inline Javascript</h3>
+            <h5 class="flex-item-links"><a href="https://developers.google.com/speed/docs/insights/BlockingJS">Remove Render-Blocking JavaScript </a></h5>
+        </section>
+            <section class="flex-container">
+              <header><h2>JavaScript WebWorkers</h2></header>
+              <h3>Displayed Using Section class="flex-container"</h3>
+              <h5 class="flex-item-links"><a href="http://www.html5rocks.com/en/tutorials/workers/basics/">JavaScript Web Workers</a></h5>
+        </section>
+       </article>
+       <footer class="flex-container">Footer Content</footer>
+      </body>
+    </html>
+                        
+                      
+      
