@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="hush-flex3.css" rel="stylesheet">
-    <title>Sandbox | Testing</title>
-   </head>
-      <body>
-          <nav class="flex-container">
-              <h4 class="flex-item flex-item-nav"><a href="http://hushpuppies123.github.io/">Home</a></h4>
-              <h4 class="flex-item flex-item-nav"><a href="http://validator.w3.org/mobile/">Mobile Validator</a></h4>
-          </nav>
-          <aside class="flex-container">
-                    <h5 class="flex-item flex-item-nav"><span class="counter">1</span></h5>
-                    <h5 class="flex-item flex-item-nav"><span style="background:black;"><a href="http://www.html5rocks.com/en/features/file_access">HTML5 File Access</a></span></h5>
-                    <h5 class="flext-item flex-item-nav"><span style="background:black;">3</span></h5>
-            </aside>
-          <article>
-          <h1>PlayBox</h1>
-          <aside><h4>This Page is Under Construction</h4></aside>
-          <section>
-          <h2>W3C Mobile References</h2>
-          <h3><a href="http://www.w3.org/standards/webdesign/mobilweb">MOBILE WEB</a></h3>
-          <blockquote>A number of the barriers that mobile users face are similar to those experienced by people with disabilities. These similarities make it natural to aim at developing Web sites that are accessible both for people with disabilities and for mobile devices. The two reference documents in this space, the Web Content Accessibility Guidelines (WCAG) and the Mobile Web Best Practices have thus a number of links and similarities.</blockquote>
-          </section>
-          <section>
-        <h2>Google Speed</h2>
-        <p>About <span> Speed!</span>in pages</p>
-        <div><img src="https://cloud.githubusercontent.com/assets/12199277/9096677/9f86def6-3b8c-11e5-80bc-627511506f3f.jpg" alt="Thumbnail image of Dr. Martin Luther King Jr."></div>
-        <script>
-          var span = document.getElementsByTagName('span')[0];
-          span.textContent = ' First Important Item'; // change DOM text content
-          span.style.display = 'inline';  // change CSSOM property
-          // create a new element, style it, and append it to the DOM
-          var loadTime = document.createElement('div');
-          loadTime.textContent = 'You loaded this page on: ' + new Date();
-          loadTime.style.color = 'blue';
-          document.body.appendChild(loadTime);
-        </script>
-        <h3>Important Lesson: Executing our inline script blocks DOM construction</h3>
-        <p>In other words, our script block can’t find any elements later in the page because they haven’t been processed yet! Or, put slightly differently: executing our inline script blocks DOM construction, which will also delay the initial render.</p>
-        <h5><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript">Link to Source of above code</a></h5>
-        <h3>What About Google Advice: Inline Javascript</h3>
-        <h5><a href="https://developers.google.com/speed/docs/insights/BlockingJS">Remove Render-Blocking JavaScript </a></h5>
-        </section>
-       </article>
-      </body>
-    </html>
+<html>
+<head>
+  <title>JavaScript | WebWorkers</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <main>
+  <article>
+    <h1>JavaScript Testing</h1>
+ 
+<!-- source: http://www.html5rocks.com/en/tutorials/workers/basics/ -->
+  <div id="log"></div>
+
+  <script id="worker1" type="javascript/worker">
+    // This script won't be parsed by JS engines
+    // because its type is javascript/worker.
+    self.onmessage = function(e) {
+      self.postMessage('msg from worker');
+    };
+    // Rest of your worker code goes here.
+  </script>
+
+  <script>
+    function log(msg) {
+      // Use a fragment: browser will only render/reflow once.
+      var fragment = document.createDocumentFragment();
+      fragment.appendChild(document.createTextNode(msg));
+      fragment.appendChild(document.createElement('br'));
+      document.querySelector("#log").appendChild(fragment);
+    }
+    var blob = new Blob([document.querySelector('#worker1').textContent]);
+    var worker = new Worker(window.URL.createObjectURL(blob));
+    worker.onmessage = function(e) {
+      log("Received: " + e.data);
+    }
+    worker.postMessage(); // Start the worker.
+  </script>
+  <aside>
+    <h5>Page Speed Insights commonly recommended: Eliminate render-blocking JavaScript and CSS in above-the-fold content</h5>
+    <h5><a href="https://developers.google.com/speed/docs/insights/BlockingJS">https://developers.google.com/speed/docs/insights/BlockingJS</a></h5>
+  </aside>
+   </article>
+   </main>
+   <footer><h5>Original Webworker code from <a href="http://www.html5rocks.com/en/tutorials/workers/basics/">HTML5 Rocks Web Worker Basics</a></h5></footer>
+</body>
+</html>
